@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://bvrgm4msrqqd8"]
 
 [ext_resource type="Script" uid="uid://gsp64tbth85t" path="res://scripts/collision_shape_2d.gd" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bvrgm4msrqqd8" path="res://scenes/game.tscn" id="2_yqjtg"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fqghu"]
 distance = -18.0
 
-[node name="Game" unique_id=1168409957]
+[node name="Game" unique_id=1168409957 instance=ExtResource("2_yqjtg")]
 
 [node name="KillZone" type="Area2D" parent="." index="0" unique_id=1589405119]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone" index="0" unique_id=1994682895]
 shape = SubResource("WorldBoundaryShape2D_fqghu")
 script = ExtResource("1_uwrxv")
+
+[node name="Respawn" type="Marker2D" parent="." index="1" unique_id=735294042]
+position = Vector2(0, -11)
