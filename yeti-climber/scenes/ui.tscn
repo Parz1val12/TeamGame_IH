@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://8v1ja6v8il7v"]
+
+[ext_resource type="Script" uid="uid://cxlqcxf26tiii" path="res://scripts/score_label.gd" id="1_nt7q6"]
+
+[node name="ui" type="Control" unique_id=712352279]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=670532559]
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=765494715]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("1_nt7q6")
