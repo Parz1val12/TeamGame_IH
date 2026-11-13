@@ -1,33 +1,6 @@
 [gd_scene format=3 uid="uid://drc07hr2dyhg7"]
 
-[ext_resource type="Script" uid="uid://dsnoga6wycfrt" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://lnbo3b00arq3" path="res://assets/sprites/tempP.png" id="2_qhqgy"]
+[node name="CharacterBody2D" unique_id=591457219]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
-atlas = ExtResource("2_qhqgy")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_3g2wy"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dqkch")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nkrii"]
-size = Vector2(20, 29)
-
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=591457219]
-script = ExtResource("1_g2els")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1626462424]
-position = Vector2(0, -16)
-sprite_frames = SubResource("SpriteFrames_3g2wy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1881271303]
-position = Vector2(0, -14.5)
-shape = SubResource("RectangleShape2D_nkrii")
+[node name="Camera2D" type="Camera2D" parent="." index="2" unique_id=1033936889]
+position_smoothing_enabled = true
