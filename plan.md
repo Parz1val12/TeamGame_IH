@@ -30,15 +30,15 @@
 
 | # | Part | Who builds it | Done? |
 |---|---|---|---|
-| 1 | Player with idle, run, and jump animations | Hailey |  |
-| 2 | Our own controls (Input Map) | Ian |  |
-| 3 | Camera that follows the player | Ian |  |
-| 4 | Tile level with a background layer | Hailey |  |
-| 5 | Moving platform (RPG: moving obstacle) | Ian |  |
-| 6 | Pickups | Hailey |  |
-| 7 | Score on screen (GameManager) | Ian |  |
-| 8 | Killzone for falling and the enemy | Ian |  |
-| 9 | Enemy that moves between walls | Ian |  |
-| 10 | Signs with a pixel font | Hailey |  |
-| 11 | Music that keeps playing on restart | Ian |  |
-| 12 | Pickup sound | Hailey |  |
+| 1 | Player with idle, run, and jump animations | Hailey | No |
+| 2 | Our own controls (Input Map) | Ian | Yes |
+| 3 | Camera that follows the player | Ian | Yes |
+| 4 | Tile level with a background layer | Hailey | No |
+| 5 | Moving platform (RPG: moving obstacle) | Ian | No |
+| 6 | Pickups | Hailey | No |
+| 7 | Score on screen (GameManager) | Ian | Yes |
+| 8 | Killzone for falling and the enemy | Ian | Yes |
+| 9 | Enemy that moves between walls | Ian | No |
+| 10 | Signs with a pixel font | Hailey | No |
+| 11 | Music that keeps playing on restart | Ian | No |
+| 12 | Pickup sound | Hailey | No |
