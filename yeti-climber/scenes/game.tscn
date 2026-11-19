@@ -1,7 +1,9 @@
 [gd_scene format=4 uid="uid://bvrgm4msrqqd8"]
 
+[ext_resource type="Script" uid="uid://b17lhc4ultlka" path="res://scripts/game_manager.gd" id="1_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://coipfin4emj7g" path="res://assets/sprites/New Piskel.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://drc07hr2dyhg7" path="res://scenes/player.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://do4hsmbkj6uxt" path="res://scenes/coin.tscn" id="4_lbhrr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
 texture = ExtResource("1_yqjtg")
@@ -32,11 +34,18 @@ sources/1 = SubResource("TileSetAtlasSource_lbhrr")
 
 [node name="Game" type="Node2D" unique_id=1168409957]
 
+[node name="Game_Manager" type="Node" parent="." unique_id=1982446276]
+unique_name_in_owner = true
+script = ExtResource("1_lnu2h")
+
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1990729305]
 tile_map_data = PackedByteArray("AAD//wAAAQADAAAAAAAAAAAAAQADAAAAAAABAAAAAQADAAAAAAACAAAAAQADAAAAAAADAAAAAQADAAAAAAAEAAAAAQADAAAAAAAFAAAAAQADAAAAAAD+/wAAAQADAAAAAAD9/wAAAQADAAAAAAD8/wAAAQADAAAAAAD7/wAAAQADAAAAAAD6/wAAAQADAAAAAAD6/wEAAQADAAEAAAD7/wEAAQADAAEAAAD8/wEAAQADAAEAAAD9/wEAAQADAAEAAAD+/wEAAQADAAEAAAD//wEAAQADAAEAAAAAAAEAAQADAAEAAAABAAEAAQADAAEAAAACAAEAAQADAAEAAAADAAEAAQADAAEAAAAEAAEAAQADAAEAAAAFAAEAAQADAAEAAAAFAAMAAQADAAEAAAAFAAIAAQADAAEAAAAEAAIAAQADAAEAAAAEAAMAAQADAAEAAAADAAMAAQADAAEAAAACAAMAAQADAAEAAAABAAMAAQADAAEAAAAAAAMAAQADAAEAAAD//wMAAQADAAEAAAD+/wMAAQADAAEAAAD9/wMAAQADAAEAAAD8/wMAAQADAAEAAAD7/wMAAQADAAEAAAD6/wMAAQADAAEAAAD6/wIAAQADAAEAAAD7/wIAAQADAAEAAAD8/wIAAQADAAEAAAD9/wIAAQADAAEAAAD+/wIAAQADAAEAAAD//wIAAQADAAEAAAAAAAIAAQADAAEAAAABAAIAAQADAAEAAAACAAIAAQADAAEAAAADAAIAAQADAAEAAAD5/wAAAQACAAAAAAAGAAAAAQAEAAAAAAAGAAEAAQAEAAEAAAAGAAIAAQAEAAEAAAAGAAMAAQAEAAEAAAD5/wEAAQACAAEAAAD5/wIAAQACAAEAAAD5/wMAAQACAAEAAAD5/wQAAQACAAIAAAD6/wQAAQADAAIAAAD7/wQAAQADAAIAAAD8/wQAAQADAAIAAAD9/wQAAQADAAIAAAD+/wQAAQADAAIAAAD//wQAAQADAAIAAAAAAAQAAQADAAIAAAABAAQAAQADAAIAAAACAAQAAQADAAIAAAADAAQAAQADAAIAAAAEAAQAAQADAAIAAAAFAAQAAQADAAIAAAAGAAQAAQAEAAIAAAA=")
 tile_set = SubResource("TileSet_3g2wy")
 
-[node name="CharacterBody2D" parent="." unique_id=591457219 instance=ExtResource("2_lnu2h")]
+[node name="Coin" parent="." unique_id=1306794333 instance=ExtResource("4_lbhrr")]
+position = Vector2(77, -8)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=632801145]
+[node name="player" parent="." unique_id=591457219 instance=ExtResource("2_lnu2h")]
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=666244492]
 zoom = Vector2(2, 2)
