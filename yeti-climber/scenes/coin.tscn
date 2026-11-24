@@ -33,7 +33,7 @@ animations = [{
 }],
 "loop": 2,
 "name": &"default",
-"speed": 8.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -47,7 +47,7 @@ animations = [{
 }],
 "loop": 2,
 "name": &"pickup",
-"speed": 16.0
+"speed": 12.0
 }]
 
 [sub_resource type="Animation" id="Animation_rwqht"]
